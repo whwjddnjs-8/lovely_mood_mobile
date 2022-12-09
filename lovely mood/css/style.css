@@ -36,6 +36,7 @@ body {
 
 .preloading-title h2.logo {
 	margin-bottom: 30px;
+	font-size: 35px;
 }
 
 .preloading-title span {
@@ -163,3 +164,92 @@ body {
 	text-decoration: underline;
 }
 
+
+/* #### Signup html #### */
+.signup {
+	height: 750px;
+}
+
+.signup-inner {
+	width: inherit;
+	height: inherit;
+}
+
+.signup-content {
+	padding: 20px;
+}
+
+.signup-field {
+	margin-bottom: 18px;
+	font-weight: normal;
+}
+
+.signup-field>em {
+	color: var(--crimson);
+}
+
+.signup-field input {
+	width: 100%;
+	display: block;
+	padding: 10px;
+	border: none;
+	border-bottom: 1px solid var(--dark-gray);
+}
+
+.id-field {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.id-field input {
+	flex: 4;
+}
+
+.btn-double-check {
+	flex: 1;
+	background-color: transparent;
+	border: 1px solid var(--dark-gray);
+}
+
+.telnumber-field {
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	gap: 40px;
+}
+
+.telnumber-field>* {
+	flex: 1;
+}
+
+.tel-input {
+	position: relative;
+}
+
+.tel-input:before {
+	content: '\F63B';
+	font-family: bootstrap-icons;
+	position: absolute;
+	left: -27px;
+	top: 10px;
+	color: var(--dark-gray);
+
+}
+
+.birth-field {
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+
+.birth-field>* {
+	flex: 1;
+}
+
+.btn-sign-up {
+	background-color: var(--light-beige);
+	margin: 20px auto;
+}

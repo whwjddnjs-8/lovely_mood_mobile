@@ -73,3 +73,93 @@ body {
 		opacity: 1;
 	}
 }
+
+/* #### Signin html #### */
+.signin {
+	height: 750px;
+}
+
+.signin-inner {
+	width: inherit;
+	height: inherit;
+	position: relative;
+}
+
+.signin-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.signin-form {
+	padding: 25px 0;
+	background-color: #fff;
+	width: 335px;
+	border-radius: 13px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
+}
+
+.signin-title {
+	padding: 20px 0;
+}
+
+.signin-title h2 {
+	font-family: var(--primary-en);
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+
+.signin-title span {
+	font-family: var(--secondary-kr);
+}
+
+.signin-form form input {
+	border: 1px solid var(--gloudy);
+	padding: 10px;
+	width: 90%;
+	border-radius: 5px;
+	margin: 5px 0
+}
+
+.signin-form form input:focus {
+	border: 1px solid var(--light-brown);
+}
+
+.btn-login {
+	background-color: var(--light-beige);
+	margin: 0px auto;
+	margin-top: 20px;
+}
+
+.find-idpw {
+	margin: 10px 0 20px 0;
+}
+
+.find-idpw a {
+	text-decoration: underline;
+	color: var(--light-black);
+}
+
+.simple-login span {
+	font-size: 13px;
+	color: var(--light-gray);
+}
+
+.simple-login .sns {
+	margin: 15px 0;
+}
+
+.simple-login .sns a {
+	margin: 4px;
+}
+
+.signup-suggest {
+	margin-top: 10px;
+}
+
+.signup-suggest a {
+	text-decoration: underline;
+}
+

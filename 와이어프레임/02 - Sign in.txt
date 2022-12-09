@@ -5,7 +5,7 @@
 			.signin-form
 				.signin-title
 					h2,span
-				form.signin
+				form
 					input[type=text]
 					input[type=password]
 					button.btn-login
@@ -16,6 +16,7 @@
 					.sns
 						(a > img) * 5
 			.signup-suggest
+				span > a
 		.gnb
 			(a > font-icon, span) * 5
 			

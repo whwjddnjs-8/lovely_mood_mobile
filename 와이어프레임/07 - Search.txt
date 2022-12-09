@@ -1,0 +1,31 @@
+.container.search
+	.main-header
+		[same structure html]
+	.search-content
+		.search-input
+			input[type=text]
+		.recent-search
+			.title
+				h3, button.delete-all
+			.recent-words
+				a * 5
+		.today-suggestion
+			h3
+			.today-words
+				a * 5
+		.recent-view
+			h3
+			.recent-view-items
+				.item
+					img	
+					b
+					span
+		.popular-search-words
+			.title
+				h3, span
+			ul.popular-words
+				(li > em) * 10
+	.gnb
+		[same structure html]
+		
+		

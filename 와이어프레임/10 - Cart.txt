@@ -1,0 +1,25 @@
+.container.cart
+	.cart-inner
+		.sub-header-with-title
+			[same structure html]
+		.cart-content
+			.add-cart
+				.title
+					h3, button.delete-all
+				.cart-items
+					.item
+						input[type=checkbox]
+						img
+						.desc
+							h3
+							span
+							div
+								b, select
+						button.btn-close
+			.expect-payment
+				(div > span, b) * 4
+			button.btn-payment
+		.gnb
+			[same structure html]
+			
+			

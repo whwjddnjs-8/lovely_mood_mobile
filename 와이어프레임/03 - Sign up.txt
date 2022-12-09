@@ -1,0 +1,41 @@
+.container.signup
+	.signup-inner	
+		.sub-header-with-title
+			button.btn-back > font-icon
+			h2.logo
+			button.btn-home > font-icon
+		.signup-content
+			.signup-field
+				span,em
+				.id-field
+					input[type=text]
+					button.btn-double-check
+				p.alert-message
+			.signup-field
+				span,em
+				input[type=password]
+			.signup-field
+				span,em
+				input[type=password]
+			.signup-field
+				span,em
+				input[type=text]
+			.signup-field
+				span,em
+				.telnumber-field
+					select
+					input[type=text]
+					input[type=text]
+			.signup-field
+				span,em
+				input[type=email]
+			.signup-field
+				.birth-field
+					input[type=text]
+					select
+					select
+			button.btn-sign-up
+		.gnb
+			[same structure html]
+			
+			

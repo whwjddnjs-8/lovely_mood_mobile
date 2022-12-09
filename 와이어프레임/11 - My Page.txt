@@ -1,0 +1,30 @@
+.container.mypage
+	.mypage-inner
+		.main-header
+			[same structure html]
+		.mypage-content
+			.profile
+				img
+				.profile-grade
+					.grade-zone
+					h3
+					.point-coupon
+						.point
+							span, span
+						.coupon
+							span, span
+			.recent-view
+				h3
+				.recent-view-items
+					.item
+						img	
+						b
+						span
+			.banner
+			.mypage-menu
+				.menu
+					(a > font-icon, span) * 8
+		.gnb
+			[same structure html]
+	
+	

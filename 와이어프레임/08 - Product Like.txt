@@ -1,0 +1,26 @@
+.container.product-like
+	.product-like-inner
+		.main-header
+			[same structure html]
+		.product-like-content
+			.recent-view
+				h3
+				.recent-view-items
+					.item
+						img	
+						b
+						span
+			.wished-product
+				.title
+					h3, button.show-all
+				.wished-product-list
+					.item
+						img	
+						b
+						span
+				
+
+		.gnb
+			[same structure html]
+			
+			

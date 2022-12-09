@@ -1,0 +1,13 @@
+/* #### Common CSS #### */
+
+.container {
+	width: 375px;
+}
+
+/* Logo CSS */
+h2.logo {
+	font-family: var(--primary-en);
+	font-size: 35px;
+	font-weight: 400;
+	color: var(--dark-brown);
+}

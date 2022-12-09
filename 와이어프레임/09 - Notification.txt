@@ -1,0 +1,15 @@
+.container.notification
+	.notification-inner
+		.main-header
+			[same structure html]
+		.notification-content
+			.notification
+				.noti
+					span
+					b
+					p
+				img
+		.gnb
+			[same structure html]
+			
+			

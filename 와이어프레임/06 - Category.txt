@@ -1,0 +1,18 @@
+.container.category
+	.category-inner
+		.main-header
+			button.btn-back > font-icon
+			h2.logo
+			.header-notice
+				button.btn-alarm > font-icon
+				button.btn-cart > font-icon , em
+		.category-content
+			.category-menu
+				.menu
+					a, font-icon
+			.exchange-return-alert
+				b, span
+		.gnb
+			[same structure html]
+			
+			

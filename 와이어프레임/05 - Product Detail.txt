@@ -1,0 +1,53 @@
+.container.product-detail
+	.product-detail-inner
+		.main-header
+			[same structure html]
+		.product-detail-content
+			.slider
+				a > img
+			.product-detail
+				.badge
+					span * 2
+				.product-info
+					h2
+					div
+						span * 2
+					div
+						span * 2
+					div
+						span * 2
+					div
+						span * 2
+					div
+						span, select
+			.product-price
+				.select-product
+					span
+					input[type=number]
+				.total-price
+					b, span
+			.product-buy-btns
+				button.btn-buy-it-now
+				button.btn-add-to-cart
+			img
+			span
+			img
+			.product-review-qna
+				.slide-title
+					h3
+				.slide-content.review-list
+					.review
+						font-icon * 5, span
+						p
+						.review-image
+							img * 2
+						span
+				.slide-title
+					h3
+				.slide-content.qna-list
+					.qna
+						span * 2
+		.gnb
+			[same structure html]
+			
+			

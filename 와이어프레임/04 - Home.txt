@@ -1,0 +1,66 @@
+.container.home
+	.home-inner
+		.main-header
+			[same structure html]
+		.home-content
+			.home-tabs
+				a * 5
+			.home-slider
+				a > img
+			.best-product
+				.front-title
+					h3, span
+				.product-items	
+					.item
+						img
+						.desc
+							.badge
+								span * 2
+							span
+							s
+							b
+				button.btn-show-all
+			.banner
+				img
+			.new-product
+				.front-title
+					h3, span
+				.product-items	
+					.item
+						img
+						.desc
+							.badge
+								span * 2
+							span
+							s
+							b
+				button.btn-show-all
+			.banner
+				img
+			.best-category
+				.front-title
+					h3
+					a * 5
+				.best-category-items
+					.item
+						img
+						.desc
+							.badge
+								span * 2
+							span
+							span
+							s
+							b
+				
+			.home-footer
+				.service-center
+					b
+					a * 4
+				.company-info
+					b
+					span * 5
+		.gnb
+			[same structure html]
+			
+			
+			

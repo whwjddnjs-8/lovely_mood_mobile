@@ -1,0 +1,75 @@
+/* Import Local CSS */
+@import url(/css/reset.css);
+@import url(/css/common.css);
+@import url(/css/variables.css);
+
+* {
+	font-family: var(--primary-kr);
+	font-weight: 300;
+}
+
+body {
+	margin: 0;
+	color: var(--dark-black);
+	line-height: 1.5em;
+	font-size: 14px;
+}
+
+/* #### Preloading html #### */
+.preloading {
+	height: 750px;
+}
+
+.preloading-inner {
+	width: inherit;
+	height: inherit;
+	background: url(/images/preloading-cut.png) no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+
+.preloading-title {
+	position: absolute;
+	top: 80px;
+	left: 30px;
+}
+
+.preloading-title h2.logo {
+	margin-bottom: 30px;
+}
+
+.preloading-title span {
+	display: block;
+	font-weight: bold;
+	font-size: 22px;
+	font-family: var(--secondary-kr);
+	line-height: 1.5em;
+	color: var(--light-black);
+	animation: preloading-span 1s;
+	animation-fill-mode: both;
+	opacity: 0;
+}
+
+.preloading-title span:nth-of-type(1) {
+	animation-delay: 0s;
+}
+
+.preloading-title span:nth-of-type(2) {
+	animation-delay: 0.5s;
+}
+
+.preloading-title span:nth-of-type(3) {
+	animation-delay: 1.0s;
+}
+
+@keyframes preloading-span {
+	0% {
+		transform: translateX(-10px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}

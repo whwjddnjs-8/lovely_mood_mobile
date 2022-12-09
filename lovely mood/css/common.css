@@ -65,7 +65,8 @@ h2.logo {
 }
 
 /* Sub Header CSS*/
-.sub-header-with-title {
+.sub-header-with-title,
+.main-header {
 	width: 100%;
 	height: 70px;
 	display: flex;
@@ -74,11 +75,45 @@ h2.logo {
 	background-color: var(--light-beige);
 }
 
-.sub-header-with-title button {
+.sub-header-with-title button,
+.main-header button {
 	border: none;
 	background-color: transparent;
 	font-size: 26px;
 	margin: 10px;
+}
+
+/* Main Header CSS */
+.header-notice {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+}
+
+.header-notice button {
+	margin: 0;
+}
+
+.cart {
+	margin-bottom: 4px;
+	position: relative;
+}
+
+.cart em {
+	position: absolute;
+	font-style: normal;
+	right: 0;
+	top: 5px;
+	background-color: var(--pink);
+	border-radius: 50%;
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+	line-height: 16px;
 }
 
 /* GNB CSS */
@@ -95,8 +130,8 @@ h2.logo {
 	height: 65px;
 	text-align: center;
 	/* 작업끝나고 주석 풀기 */
-	/* position: absolute;
-	bottom: 0; */
+	position: absolute;
+	bottom: 0;
 	background-color: #fff;
 	display: flex;
 	justify-content: space-between;

@@ -56,6 +56,13 @@ h2.logo {
 	font-weight: normal;
 }
 
+.btn-text-primary {
+	border: none;
+	background-color: transparent;
+	text-decoration: underline;
+	color: var(--dark-gray);
+}
+
 /* Alert MSG CSS */
 .alert-message {
 	color: var(--crimson);
@@ -130,8 +137,8 @@ h2.logo {
 	height: 65px;
 	text-align: center;
 	/* 작업끝나고 주석 풀기 */
-	position: absolute;
-	bottom: 0;
+	/* position: absolute;
+	bottom: 0; */
 	background-color: #fff;
 	display: flex;
 	justify-content: space-between;

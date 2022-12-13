@@ -5,7 +5,7 @@
 
 * {
 	font-family: var(--primary-kr);
-	font-weight: 300;
+	font-weight: 400;
 }
 
 body {
@@ -181,7 +181,6 @@ body {
 
 .signup-field {
 	margin-bottom: 18px;
-	font-weight: normal;
 }
 
 .signup-field>em {
@@ -281,11 +280,10 @@ body {
 
 .category-menu .menu a {
 	font-family: var(--primary-en);
-	font-weight: normal;
 }
 
 .category-menu .menu a.moodmade:after {
-	content:'';
+	content: '';
 	display: inline-block;
 	width: 16px;
 	height: 16px;
@@ -315,4 +313,184 @@ body {
 	font-size: 12px;
 	font-weight: 400;
 	color: var(--dark-gray);
+}
+
+/* #### Search html #### */
+.search {
+	height: 750px;
+}
+
+.search-inner {
+	width: inherit;
+	height: inherit;
+}
+
+.search-content {
+	padding: 20px;
+	overflow-x: hidden;
+}
+
+/* Search Content 내 title */
+.search-content .title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.search-content .title h3 {
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.search-content .title span {
+	font-size: 14px;
+	color: var(--dark-gray);
+}
+
+.search-input input {
+	width: 100%;
+	display: block;
+	padding: 10px;
+	border-radius: 28px;
+	border: none;
+	background-color: var(--gloudy);
+	background: var(--gloudy) url(/images/search.svg) no-repeat center left 15px;
+	padding-left: 40px;
+}
+
+.search-input input::placeholder {
+	color: var(--dark-black);
+}
+
+/* 최근검색어 */
+.recent-search {
+	margin-top: 20px;
+}
+
+.recent-words {
+	width: 100%;
+	padding: 15px 0;
+	overflow-x: auto;
+	white-space: nowrap;
+}
+
+.recent-words::-webkit-scrollbar {
+	display: none;
+}
+
+.recent-words a {
+	border: 1px solid var(--dark-gray);
+	padding: 2px 12px;
+	border-radius: 30px;
+	margin-right: 3px;
+	display: inline-block;
+}
+
+/* 오늘 뭐입지? */
+.today-suggestion h3 {
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.today-words {
+	width: 100%;
+	padding: 15px 0;
+	overflow-x: auto;
+	white-space: nowrap;
+}
+
+.today-words::-webkit-scrollbar {
+	display: none;
+}
+
+.today-words a {
+	border: none;
+	background: var(--light-beige);
+	padding: 2px 12px;
+	border-radius: 30px;
+	margin-right: 3px;
+	display: inline-block;
+}
+
+/* 최근 본 상품 */
+.recent-view-items {
+	width: 395px;
+	margin-top: 15px;
+}
+
+.recent-view-items .item .thum {
+	width: 90px;
+	height: 90px;
+}
+
+.recent-view-items .item .thum img {
+	width: inherit;
+	height: inherit;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.recent-view-items .item .desc {
+	width: 90px;
+}
+
+.recent-view-items .item b {
+	font-size: 14px;
+	display: inline-block;
+	padding: 3px 0;
+}
+
+.recent-view-items .item span {
+	display: block;
+	font-size: 10px;
+	line-height: 1.2em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+/* 인기 검색어 */
+.popular-search-words {
+	margin-top: 20px;
+}
+
+.popular-words {
+	margin-top: 10px;
+	counter-reset: rank 0;
+	line-height: 2em;
+	font-size: 15px;
+	color: var(--light-black);
+}
+
+.popular-words li:before {
+	counter-increment: rank;
+	content: counter(rank);
+	margin-right: 10px;
+	font-weight: 500;
+}
+
+.popular-words li em.up:after,
+.popular-words li em.down:after,
+.popular-words li em.none:after {
+	float: right;
+	vertical-align: middle;
+	font-family: bootstrap-icons;
+	font-style: normal;
+}
+
+.popular-words li em.up:after {
+	content: '\F235';
+	color: var(--crimson);
+}
+
+.popular-words li em.down:after {
+	content: '\F229';
+	color: #1877F2;
+}
+
+.popular-words li em.none:after {
+	content: '\F2EA';
+	color: var(--light-black);
 }

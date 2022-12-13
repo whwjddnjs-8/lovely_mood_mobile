@@ -478,3 +478,82 @@ body {
 .wished-product-list .product-item .desc {
 	width: 105px;
 }
+
+/* Notification html */
+.notification {
+	height: 750px;
+}
+
+.notification-inner {
+	width: inherit;
+	height: inherit;
+}
+
+.notification-item {
+	width: 375px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 15px;
+	padding: 15px;
+	border-bottom: 1px solid var(--gloudy);
+}
+
+.notification-item.not-read {
+	background-color: var(--apricot);
+}
+
+.notification-item .noti {
+	flex: 5;
+}
+
+.notification-item .thum {
+	width: 60px;
+	height: 60px;
+	flex: 1;
+}
+
+.notification-item .thum img {
+	width: inherit;
+	height: inherit;
+	object-fit: cover;
+}
+
+.noti span {
+	color: var(--dark-gray);
+	font-weight: 500;
+	position: relative;
+	margin-left: 5px;
+}
+
+.noti span.delivery:before,
+.noti span.survey:before {
+	content: '';
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	transform: translate(-5px, 3px);
+}
+
+.noti span.delivery:before {
+	background: url(/images/delivery-truck.png) no-repeat center;
+	background-size: 17px;
+}
+
+.noti span.survey:before {
+	background: url(/images/chat.png) no-repeat center;
+	background-size: 17px;
+}
+
+.noti b {
+	color: var(--dark-black);
+	font-weight: 500;
+	margin-top: 4px;
+	display: block;
+}
+
+.noti p {
+	font-weight: normal;
+	margin: 0;
+	font-size: 13px;
+}

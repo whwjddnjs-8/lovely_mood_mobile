@@ -1,6 +1,6 @@
 .container.notification
 	.notification-inner
-		.main-header
+		.sub-header-with-title
 			[same structure html]
 		.notification-content
 			.notification

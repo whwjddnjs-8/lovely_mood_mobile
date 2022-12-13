@@ -330,23 +330,6 @@ body {
 	overflow-x: hidden;
 }
 
-/* Search Content 내 title */
-.search-content .title {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.search-content .title h3 {
-	font-weight: 500;
-	font-size: 16px;
-}
-
-.search-content .title span {
-	font-size: 14px;
-	color: var(--dark-gray);
-}
-
 .search-input input {
 	width: 100%;
 	display: block;
@@ -418,39 +401,6 @@ body {
 	margin-top: 15px;
 }
 
-.recent-view-items .item .thum {
-	width: 90px;
-	height: 90px;
-}
-
-.recent-view-items .item .thum img {
-	width: inherit;
-	height: inherit;
-	object-fit: cover;
-	border-radius: 10px;
-}
-
-.recent-view-items .item .desc {
-	width: 90px;
-}
-
-.recent-view-items .item b {
-	font-size: 14px;
-	display: inline-block;
-	padding: 3px 0;
-}
-
-.recent-view-items .item span {
-	display: block;
-	font-size: 10px;
-	line-height: 1.2em;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	display: -webkit-box;
-	-webkit-line-clamp: 2;
-	-webkit-box-orient: vertical;
-}
-
 /* 인기 검색어 */
 .popular-search-words {
 	margin-top: 20px;
@@ -493,4 +443,38 @@ body {
 .popular-words li em.none:after {
 	content: '\F2EA';
 	color: var(--light-black);
+}
+
+/* Product Like html */
+.product-like {
+	height: 750px;
+}
+
+.product-like-inner {
+	width: inherit;
+	height: inherit;
+}
+
+.product-like-content {
+	padding: 20px;
+	overflow-x: hidden;
+}
+
+.wished-product .header-title {
+	padding: 20px 0;
+}
+
+.wished-product-list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+}
+
+.wished-product-list .product-item .thum {
+	width: 105px;
+	height: 136px;
+}
+
+.wished-product-list .product-item .desc {
+	width: 105px;
 }

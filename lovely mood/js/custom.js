@@ -12,4 +12,9 @@ $(function () {
 		arrows: false,
 		infinite : false
 	})
+
+	/* Product Like 좋아요 버튼 toggle */
+	$('.product-like').click(function () {
+		$(this).toggleClass('active')
+	})
 })

@@ -17,9 +17,11 @@
 			h3
 			.recent-view-items
 				.item
-					img	
-					b
-					span
+					.thum
+						img	
+					.desc
+						b
+						span
 		.popular-search-words
 			.title
 				h3, span

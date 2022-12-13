@@ -479,7 +479,7 @@ body {
 	width: 105px;
 }
 
-/* Notification html */
+/* #### Notification html #### */
 .notification {
 	height: 750px;
 }
@@ -556,4 +556,128 @@ body {
 	font-weight: normal;
 	margin: 0;
 	font-size: 13px;
+}
+
+/* #### Cart html #### */
+.cart {
+	height: 750px;
+}
+
+.cart-inner {
+	width: inherit;
+	height: inherit;
+}
+
+.add-cart .header-title {
+	padding: 0 20px;
+	padding-top: 20px;
+
+}
+
+.cart-items {
+	padding: 10px 0;
+}
+
+.cart-item {
+	border-bottom: 1px solid var(--gloudy);
+	padding: 15px 0;
+}
+
+.cart-items .item {
+	display: flex;
+	gap: 10px;
+	align-items: flex-start;
+	padding: 0 15px;
+
+}
+
+.cart-items .item input[type=checkbox] {
+	display: none;
+}
+
+.cart-items .item label {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	position: relative;
+}
+
+.cart-items .item label>em:before {
+	content: '\F26D';
+	font-family: bootstrap-icons;
+	color: var(--dark-gray);
+	font-style: normal;
+}
+
+.cart-items .item label input[type=checkbox]:checked+em:before {
+	content: '\F26C';
+	color: var(--light-brown);
+}
+
+.cart-items .item .thum {
+	width: 83px;
+	height: 90px;
+}
+
+.cart-items .item .thum img {
+	width: inherit;
+	height: inherit;
+	object-fit: cover;
+}
+
+.cart-items .item .desc>* {
+	margin-bottom: 3px;
+}
+
+.cart-items .item .desc h3 {
+	font-size: 14px;
+	font-weight: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.cart-items .item .desc span {
+	color: var(--dark-gray);
+	display: inline-block;
+}
+
+.cart-items .item .desc>div {
+	display: flex;
+	justify-content: space-between;
+}
+
+.cart-items .item .desc>div b {
+	font-size: 16px;
+}
+
+.cart-items .custom-select {
+	border: 1px solid var(--dark-gray);
+	height: 25px;
+}
+
+.cart-items .custom-select:after {
+	top: 2px;
+}
+
+.expect-payment {
+	padding: 20px;
+}
+
+.expect-payment .payment {
+	display: flex;
+	justify-content: space-between;
+	margin: 8px 0;
+}
+
+.expect-payment .payment:last-child b {
+	font-size: 16px;
+}
+
+.btn-payment {
+	color: #fff;
+	background-color: var(--light-brown);
+	margin-bottom: 20px;
 }

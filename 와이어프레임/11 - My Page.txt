@@ -7,6 +7,9 @@
 				img
 				.profile-grade
 					.grade-zone
+						.my-grade
+							b, span
+						a > font-icon
 					h3
 					.point-coupon
 						.point
@@ -22,8 +25,7 @@
 						span
 			.banner
 			.mypage-menu
-				.menu
-					(a > font-icon, span) * 8
+				(a > font-icon, span) * 8
 		.gnb
 			[same structure html]
 	

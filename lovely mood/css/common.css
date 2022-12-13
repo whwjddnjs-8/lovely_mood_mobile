@@ -191,12 +191,12 @@ h2.sub-header-title {
 	margin: 0;
 }
 
-.header-notice .cart {
+.header-cart {
 	margin-bottom: 4px;
 	position: relative;
 }
 
-.header-notice .cart em {
+.header-cart em {
 	position: absolute;
 	font-style: normal;
 	right: 0;

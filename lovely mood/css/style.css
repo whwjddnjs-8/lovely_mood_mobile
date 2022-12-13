@@ -680,4 +680,158 @@ body {
 	color: #fff;
 	background-color: var(--light-brown);
 	margin-bottom: 20px;
+	font-size: 16px;
+}
+
+/* #### Mypage html #### */
+.mypage {
+	height: 750px;
+}
+
+.mypage-inner {
+	width: inherit;
+	height: inherit;
+}
+
+.mypage-content {
+	overflow-x: hidden;
+}
+
+.profile-outer {
+	border-bottom: 1px solid var(--gloudy);
+}
+
+.profile {
+	display: flex;
+	gap: 20px;
+	padding: 20px;
+}
+
+.profile img {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	flex: 1;
+}
+
+.profile-grade {
+	flex: 5;
+}
+
+.grade-zone {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.my-grade b {
+	color: var(--crimson);
+	font-size: 18px;
+	font-weight: 500;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.my-grade span {
+	font-weight: 500;
+	font-size: 14px;
+	color: var(--light-gray);
+	position: relative;
+	vertical-align: middle;
+}
+
+.my-grade span:after {
+	content: '\F285';
+	font-family: bootstrap-icons;
+	position: absolute;
+	top: 1px;
+}
+
+.btn-setting {
+	font-size: 18px;
+	color: var(--light-gray);
+}
+
+.profile-grade h3 {
+	font-size: 18px;
+	font-weight: 500;
+	margin: 10px 0;
+}
+
+.point-coupon {
+	display: flex;
+	gap: 10px;
+	margin-top: 15px;
+}
+
+.point-coupon .point,
+.point-coupon .coupon {
+	background-color: var(--gloudy);
+	border-radius: 10px;
+	padding: 2px 13px;
+	display: flex;
+	gap: 15px;
+	font-size: 12px;
+}
+
+.mypage-content .recent-view {
+	padding: 20px;
+}
+
+.mypage-content .banner {
+	margin: 8px 0;
+}
+
+.mypage-menu a {
+	display: block;
+	height: 50px;
+	border-bottom: 1px solid var(--gloudy);
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	padding: 0 15px;
+}
+
+.mypage-menu a:after {
+	transform: rotate(-90deg);
+	right: 15px;
+}
+
+.mypage-menu a .bi {
+	width: 25px;
+	text-align: center;
+}
+
+.mypage-menu a:last-child {
+	border: none;
+}
+
+.mypage-menu a:nth-child(5) .bi {
+	font-size: 19px;
+}
+
+.mypage-menu a span {
+	font-weight: 400;
+	margin-left: 10px;
+}
+
+.mypage-menu a:after {
+	content: '\F282';
+	font-family: bootstrap-icons;
+	position: absolute;
+	right: 10px;
+	background-color: var(--light-beige);
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 13px;
+	transition: 0.35s;
+}
+
+.btn-signout {
+	background-color: var(--light-brown);
+	color: #fff;
+	font-size: 16px;
+	margin: 15px auto;
 }

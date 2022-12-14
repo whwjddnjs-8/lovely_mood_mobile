@@ -63,6 +63,28 @@ h2.logo {
 	color: var(--dark-gray);
 }
 
+/* Badge CSS */
+.badge {
+	display: flex;
+	gap: 4px;
+}
+
+.badge span {
+	font-size: 9px;
+	background-color: var(--light-beige);
+	padding: 0 6px;
+	border-radius: 20px;
+	color: #fff;
+}
+
+.badge span:nth-child(1) {
+	background-color: var(--semi-hot-pink);
+}
+
+.badge span:nth-child(2) {
+	background-color: var(--skyblue);
+}
+
 /* Header Title CSS */
 .header-title {
 	display: flex;

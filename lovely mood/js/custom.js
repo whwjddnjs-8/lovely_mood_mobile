@@ -3,6 +3,23 @@ $(function () {
 	$('.gnb-area').load('/include/gnb.html')
 	$('.main-header-area').load('/include/main-header.html')
 
+	/* Home Main Banner Slider */
+	$('.home-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: false,
+		arrows: true
+	})
+
+	/* Home Best Product Slider */
+	$('.front-best-new-product .product-items').slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			dots: false,
+			arrows: false,
+			infinite : false
+	})
+	
 	/* Search Recent View Product Slider */
 	$('.recent-view .recent-view-items').slick({
 		slidesToShow: 4,

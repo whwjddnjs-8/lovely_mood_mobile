@@ -8,7 +8,9 @@ $(function () {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		dots: false,
-		arrows: true
+		arrows: true,
+		autoplay: true,
+  		autoplaySpeed: 3000,
 	})
 
 	/* Home Best Product Slider */
@@ -19,7 +21,21 @@ $(function () {
 			arrows: false,
 			infinite : false
 	})
-	
+
+	/* Product Detail Slider */
+	$('.product-detail-slider').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			dots: true,
+			arrows: false,
+			infinite : false
+	})
+
+	/* Product Detail 하단 Review & QNA */
+	$('.slide-title').click(function () {
+		$(this).next('.slide-content').slideToggle()
+		$(this).children().toggleClass('active')
+	})
 	/* Search Recent View Product Slider */
 	$('.recent-view .recent-view-items').slick({
 		slidesToShow: 4,
@@ -42,4 +58,21 @@ $(function () {
 	$('.cart-items .item .btn-close').click(function () {
 		$(this).parent().parent().hide()
 	})
+
+	
 })
+
+function increaseBtn() {
+	var cnt = $('#product-cnt').val()
+	$('#product-cnt').val(Number(cnt) + 1)
+}
+
+function decreaseBtn() {
+	var cnt = $('#product-cnt').val()
+	if (Number(cnt) == 0) {
+		$('#product-cnt').val(0)
+	} else {
+		$('#product-cnt').val(Number(cnt) - 1)
+	}
+	
+}

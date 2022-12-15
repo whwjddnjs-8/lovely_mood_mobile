@@ -360,6 +360,8 @@ body {
 
 .product-items .item .desc>span {
 	font-size: 13px;
+	margin-top: 4px;
+	display: inline-block;
 }
 
 .product-items .item .desc>s {

@@ -13,6 +13,12 @@ $(function () {
   		autoplaySpeed: 3000,
 	})
 
+	/* Home Advertisement Hide */
+	$('.btn-close-advertise, .advertise-dark-background').click(function () {
+		$('.advertise-dark-background').hide()
+		$('.advertise-inner').slideUp()
+	})
+
 	/* Home Best Product Slider */
 	$('.front-best-new-product .product-items').slick({
 			slidesToShow: 3,

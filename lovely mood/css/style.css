@@ -564,6 +564,50 @@ input[id=best-category-tab5]:checked~.best-category-tabs .tab5 {
 	font-size: 12px;
 }
 
+/* Home Advertisement Area */
+.advertise-dark-background {
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.226);
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.advertise-inner {
+	width: 100%;
+	height: 387px;
+	position: fixed;
+	bottom: -387px;
+	transition: 0.35s;
+	animation: advertise-show 0.7s linear;
+	animation-fill-mode: both;
+}
+
+@keyframes advertise-show {
+	0% {
+		bottom: -387px;
+	}
+
+	100% {
+		bottom: 0;
+	}
+}
+
+.advertise-inner img {
+	width: 100%;
+	height: 387px;
+	border-radius: 10px 10px 0 0;
+}
+
+.btn-close-advertise {
+	color: var(--dark-brown);
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	font-size: 22px;
+}
+
 /* #### Product Detail html #### */
 .product-detail-inner {
 	width: inherit;
@@ -933,12 +977,9 @@ input[id=best-category-tab5]:checked~.best-category-tabs .tab5 {
 .recent-words {
 	width: 100%;
 	padding: 15px 0;
-	overflow-x: auto;
-	white-space: nowrap;
-}
-
-.recent-words::-webkit-scrollbar {
-	display: none;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px
 }
 
 .recent-words a {
@@ -958,8 +999,9 @@ input[id=best-category-tab5]:checked~.best-category-tabs .tab5 {
 .today-words {
 	width: 100%;
 	padding: 15px 0;
-	overflow-x: auto;
-	white-space: nowrap;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px
 }
 
 .today-words::-webkit-scrollbar {
